@@ -1,0 +1,194 @@
+.brand-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.brand-info {
+  flex-grow: 1;
+}
+
+.brand-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.brand-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.brand-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 150px;
+  background-color: white;
+}
+
+.brand-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.brand-product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.brand-product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.brand-product-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-product-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.brand-product-price {
+  margin-top: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.brand-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.brand-page-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.brand-page-button:hover {
+  background: #f8f9fa;
+}
+
+.brand-page-button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.brand-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.brand-error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .brand-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .brand-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .brand-products {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .brand-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+  }
+} 

@@ -1,0 +1,129 @@
+.order-detail {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-detail-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+.order-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.info-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-group label {
+    min-width: 120px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.info-group span {
+    color: #333;
+}
+
+.order-items {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-items h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #6c757d;
+}
+
+.error {
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .order-detail-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .info-group {
+        flex-direction: column;
+    }
+
+    .info-group label {
+        margin-bottom: 5px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+} 
+    

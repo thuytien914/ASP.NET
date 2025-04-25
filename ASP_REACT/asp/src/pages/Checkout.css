@@ -1,0 +1,155 @@
+/* Checkout Page Styles */
+.checkout-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2em;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 40px;
+}
+
+/* Order Summary Section */
+.checkout-summary {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.checkout-summary h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.checkout-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.checkout-summary-item span:first-child {
+  max-width: 70%; /* Prevent long names from pushing price too far */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkout-summary-total {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Shipping Info Section */
+.checkout-shipping {
+  flex: 2;
+}
+
+.checkout-shipping h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Place Order Button */
+.place-order-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745; /* Green color for final confirmation */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 30px;
+}
+
+.place-order-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.place-order-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Loading/Empty Cart Message */
+.checkout-loading,
+.checkout-empty {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column-reverse; /* Stack shipping above summary */
+  }
+
+  .checkout-page {
+    padding: 20px;
+  }
+} 
